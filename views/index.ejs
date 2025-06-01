@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <ul>
+        <% for (let i = 0; i < messages.length; i++) { %>
+        <li>
+            <div> <%= messages[i].text %> </div>
+            <div> <%= messages[i].user %> </div>
+            <div> <%= messages[i].added %> </div>
+            <a href="/new">
+              <button>New Message</button>
+            </a>
+        </li>
+        <% } %>
+    </ul>
+  </body>
+</html>
